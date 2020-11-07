@@ -1,8 +1,11 @@
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,flask,windows,vscode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,flask,windows,vscode
-
+.vscode
 heroku.txt
+bin
+lib64
+pyvenv.cfg
 
 ### Flask ###
 instance/*
