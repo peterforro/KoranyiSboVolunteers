@@ -1,14 +1,7 @@
 from flask import Flask, request
-from db_connection import connection_handler
+from queries import *
 
 app = Flask(__name__)
-
-@connection_handler
-def get_users(cursor):
-    query = ''' SELECT * FROM users'''
-    cursor.execute(query)
-    return cursor.fetchall()
-
 
 @app.route("/", methods=["GET"])
 def index():
